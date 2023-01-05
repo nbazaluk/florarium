@@ -9,6 +9,7 @@ body {
 
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -24,16 +25,145 @@ ul>li {
     min-height: 100%;
 }
 
-.logo {}
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.header {}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 18px;
+    padding-bottom: 21px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
 
 .logo__img-wrap {
     width: 60px;
     height: 60px;
     border: 2px solid #000000;
     border-radius: 50%;
+    position: relative;
 }
 
 .logo__img {
     width: 70%;
     height: 80%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #000000;
+}
+
+.logo__suptitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 131.19%;
+    color: #000000;
+
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 53px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.17;
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact__tel {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.17;
+    color: #000000;
+    text-decoration: none;
+}
+
+.cart {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+    padding-right: 16px;
+}
+
+.cart__img-wrap {
+    width: 60px;
+    height: 60px;
+    background: #FFBF42;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+
+.cart__img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cart__price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.cart__price-value {}
+
+.cart__btn {
+    background-color: transparent;
+    border: none;
+    width: 12px;
+    height: 12px;
+    position: relative;
+}
+
+.cart__btn-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50);
 }

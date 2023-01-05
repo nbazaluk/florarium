@@ -6,50 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин флорариумов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="headr">
-            <div class="logo">
-                <div class="logo__img-wrap">
-                    <img src="img/logo.png" alt="Логотип" class="logo__img">
+        <header class="header">
+            <div class="container header__container">
+                <div class="logo">
+                    <div class="logo__img-wrap">
+                        <img src="img/logo.png" alt="Логотип" class="logo__img">
+                    </div>
+                    <div class="logo__desc">
+                        <div class="logo__title">Florist master</div>
+                        <div class="logo__suptitle">Магазин флорариумов</div>
+                    </div>
                 </div>
-                <div class="logo__desc">
-                    <div class="logo__title">Florist master</div>
-                    <div class="logo__suptitle">Магазин флорариумов</div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Каталог</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="contact">
+                    <a href="tel:+76543210000" class="contact__tel">+7 654 321 00 00</a>
+                </address>
+                <div class="cart">
+                    <a href="#!" class="cart__img-wrap">
+                        <img src="img/icons/shopping_cart.png" alt="Корзина" class="cart__img">
+                    </a>
+                    <div class="cart__price">
+                        <span class="cart__price-value">45,00</span>
+                        <span class="cart__price-value">$</span>
+                    </div>
+                    <button class="cart__btn">
+                        <img src="img/icons/cart__btn.svg" alt="Кнопка" class="cart__btn-img">
+                    </button>
                 </div>
-            </div>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#!" class="nav__link">Главная</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#!" class="nav__link">Каталог</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#!" class="nav__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <address class="contact">
-                <a href="tel:+76543210000" class="contact__tel">+7 654 321 00 00</a>
-            </address>
-            <div class="cart">
-                <a href="#!" class="cart__img-wrap">
-                    <img src="img/icons/shopping_cart.png" alt="Корзина" class="cart">
-                </a>
-                <div class="cart__price">
-                    <span class="cart__price-value">45,00</span>
-                    <span class="cart__price-currency">$</span>
-                </div>
-                <button class="cart__btn">
-                    <img src="img/icons/cart__btn.svg" alt="Кнопка" class="cart__btn-img">
-                </button>
             </div>
         </header>
+        <section class="hero">
+            <div class="hero__desc">
+                <div class="container">
+                    <div class="hero__content">
+                        <h1 class="title">Флорариумы <br>
+                            любой формы и размера
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </div>
 </body>
 
