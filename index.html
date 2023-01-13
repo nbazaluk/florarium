@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -78,6 +79,60 @@
                     <li class="dot"></li>
                 </ul>
                 <img src="img/hero_img.jpg" alt="Флорариум" class="hero__slide">
+            </div>
+        </section>
+        <section class="product">
+            <div class="container">
+                <h2 class="title">Готовые работы</h2>
+                <p class="product__subtitle">Подбери себе флорариум по размеру:</p>
+                <ul class="product__size-list">
+                    <li class="product__size">
+                        <label>
+                            <input type="radio" name="size" id="" class="product__check">
+                            <div class="produck__chek-fake">S</div>
+                        </label>
+                    </li>
+                    <li class="product__size">
+                        <label>
+                            <input type="radio" name="size" id="" class="product__check">
+                            <div class="produck__chek-fake">M</div>
+                        </label>
+                    </li>
+                    <li class="product__size">
+                        <label>
+                            <input type="radio" name="size" id="" class="product__check">
+                            <div class="produck__chek-fake">L</div>
+                        </label>
+                    </li>
+                    <li class="product__size">
+                        <label>
+                            <input type="radio" name="size" id="" class="product__check">
+                            <div class="produck__chek-fake">XL</div>
+                        </label>
+                    </li>
+                </ul>
+                <div class="product__slider">
+                    <div class="product__slider-ctrls">
+                        <div class="product__slider-ctrl product__slider-ctrl--prev">Назад</div>
+                        <div class="product__slider-ctrl product__slider-ctrl--next">Вперед</div>
+                    </div>
+                </div>
+                <ul class="product__list">
+                    <li class="product_item">
+                        <div class="product__img-wrap">
+                            <img src="img/finished_work/oazis.png" alt="Флорариум оазис" class="product__img">
+                        </div>
+                        <div class="product__desc">
+                            <h3 class="product__name">“Оазис”</h3>
+                            <p class="product__info">Набор включает в себя: 3 разновидности суккулентов, тайскую
+                                архидею, грунт, стеклянный флорариум и элементы декора.</p>
+                        </div>
+                        <div class="product__buy">
+                            <div class="product__price">35$</div>
+                            <button class="product__buy-btn btn">В корзину</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </div>
