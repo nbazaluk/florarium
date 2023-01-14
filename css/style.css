@@ -39,6 +39,7 @@ ul>li {
 
 .wrapper {
     min-height: 100%;
+    overflow: hidden;
 }
 
 .container {
@@ -191,6 +192,7 @@ ul>li {
     height: 573px;
     display: flex;
     column-gap: 30px;
+    padding-bottom: 42px;
 }
 
 .hero__desc,
@@ -237,6 +239,12 @@ ul>li {
 .btn {
     background-color: #FFBF42;
     border-radius: 50px;
+    transition: all 0.4s;
+
+}
+
+.btn:hover {
+    background-color: #f3bf59;
 }
 
 .hero__link {
@@ -294,3 +302,112 @@ ul>li {
 }
 
 /* Hero end */
+
+/* product start */
+.product {
+    padding-top: 42px;
+}
+
+.product__subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    margin: 13px 0px;
+}
+
+.product__size-list {
+    display: flex;
+    column-gap: 25px;
+}
+
+.product__size {
+    position: relative;
+}
+
+.product__check {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.product__check:checked+.produck__chek-fake {
+    background-color: #FFBF42;
+    box-shadow: none;
+}
+
+.produck__chek-fake {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.14);
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    transition: all 0.3s;
+}
+
+.produck__chek-fake:hover {
+    background-color: #f0efef;
+}
+
+.product__slider {}
+
+.product__slider-ctrls {}
+
+.product__slider-ctrl {}
+
+.product__slider-ctrl--prev {}
+
+.product__slider-ctrl--next {}
+
+.product__list {}
+
+.product_item {
+    max-width: 319px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.13);
+
+}
+
+.product__img-wrap {
+    width: 100%;
+    height: 301px;
+}
+
+.product__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product__desc {
+    padding: 18px 33px 24px;
+}
+
+.product__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 131.19%;
+    margin-bottom: 12px;
+}
+
+.product__info {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 131.19%;
+    margin-bottom: 18px;
+}
+
+.product__buy {}
+
+.product__price {}
+
+.product__buy-btn {}
+
+.btn {}
+
+/* product end */
